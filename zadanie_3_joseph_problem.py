@@ -14,47 +14,6 @@ rzymsko-żydowski historyk, od którego wzięła się nazwa problemu.
 Napisz program rozwiązujący ten problen dla dowolnej liczby żołnierzy."""
 
 
-# Understand problem 
-"""
-The Josephus Problem - Numberphile
-https://www.youtube.com/watch?v=uCsD3ZGzMgE
-"""
-
-# Joseph problem algorithm
-"""
-If n=2**a (n is a power of 2) safe_postion is 1
-If n is not a power of 2 we find highest  power of 2 smaller than or  equal to n.
-n = 2**power + r_value
-safe_position = r_value * 2 + 1
-"""
-#__________________________Program [ONE LOOP]
-# # Number of soldiers
-# n = 77
-# print(f"Number of soldiers: {n}")
-
-# # Initial values
-# power = 1
-# highest_power_two = 2**0 #1
-
-# # Find highest  power of 2 smaller than or  equal to n 
-# while highest_power_two * 2 <= n:
-#     highest_power_two *= 2
-#     power += 1
-
-# print(f"The highest  power of 2 smaller than or  equal to n is: 2^{power} = {highest_power_two }")
-
-
-# # r value is the remainder
-# r_value =  n - highest_power_two 
-# print(f"r_value: {r_value}")
-
-# # Calculate Safe position 
-# print("Safe position formula - Joseph problem:\n")
-# print("f(n) = r_value * 2 + 1")
-# safe_position = r_value * 2 + 1
-# print(f"The survivor is at position: {safe_position}")
-
-
 #_______________________Create cases
 
 cases = [(1, 1), (2, 1), (3, 3), (4, 1), (5, 3), (6, 5), (7, 7), (8, 1), (9, 3), (10, 5), (11, 7), (12, 9), (13, 11), (14, 13), (41,19)]
@@ -97,6 +56,46 @@ for case in range(0, cases_length):
 
     print(f"Case number: {case+1} : {result}\n")
 
+
+# Understand problem 
+"""
+The Josephus Problem - Numberphile
+https://www.youtube.com/watch?v=uCsD3ZGzMgE
+"""
+
+# Joseph problem algorithm
+"""
+If n=2**a (n is a power of 2) safe_postion is 1
+If n is not a power of 2 we find highest  power of 2 smaller than or  equal to n.
+n = 2**power + r_value
+safe_position = r_value * 2 + 1
+"""
+#__________________________Program [ONE LOOP]
+# # Number of soldiers
+# n = 77
+# print(f"Number of soldiers: {n}")
+
+# # Initial values
+# power = 1
+# highest_power_two = 2**0 #1
+
+# # Find highest  power of 2 smaller than or  equal to n 
+# while highest_power_two * 2 <= n:
+#     highest_power_two *= 2
+#     power += 1
+
+# print(f"The highest  power of 2 smaller than or  equal to n is: 2^{power} = {highest_power_two }")
+
+
+# # r value is the remainder
+# r_value =  n - highest_power_two 
+# print(f"r_value: {r_value}")
+
+# # Calculate Safe position 
+# print("Safe position formula - Joseph problem:\n")
+# print("f(n) = r_value * 2 + 1")
+# safe_position = r_value * 2 + 1
+# print(f"The survivor is at position: {safe_position}")
 
 
 

@@ -1,29 +1,5 @@
 "Napisz program, który wypisze na ekranie wszystkie liczby pierwsze z zadanego zakresu."
 
-# # #_______________________Program [ONE LOOP] - Print list with prime numbers 
-# lower = 0
-# upper = 0
-
-# # Create a list in a range of a to b
-# my_list = list(range(lower, upper+1))
-# print(f'My list: {my_list}')
-
-# #  Empty list with prime numbers
-# prime_list = []
-
-# # Add prime numbers to prime list
-# for num in range(lower, upper + 1):
-#     # all prime numbers are greater than 1
-#     if num > 1:
-#         for i in range(2, num):
-#             if (num % i) == 0:
-#                 break
-#         else:
-#             prime_list.append(num)
-
-# print(f'Prime number list: {prime_list}')
-
-
 #_______________________Create cases
 
 range_one = (1,30)
@@ -46,8 +22,13 @@ case_four = (range_four, result_four)
 cases = [case_one, case_two, case_three, case_four]
 
 #______________________Check cases
+number_cases = 1 
 for case in cases:
-    print(f"Case: {case}")
+
+    # Print case value
+    print(f"Case: {number_cases}")
+    print(f"Range: {case[0]}")
+    print(f"Expected result: {case[1]}")
 
     # Get values for cases. Get lower range and uppper range.
     range_case = case[0]
@@ -83,6 +64,30 @@ for case in cases:
     else: 
         result = False
 
-    print(case, ": ", result, "\n")
+    # print( case, ": ", result, "\n")
+    print(f"Test result of case {number_cases}", ": ", result, "\n")
+    number_cases += 1
     
 
+# # #_______________________Program [ONE LOOP] - Print list with prime numbers 
+# lower = 0
+# upper = 0
+
+# # Create a list in a range of a to b
+# my_list = list(range(lower, upper+1))
+# print(f'My list: {my_list}')
+
+# #  Empty list with prime numbers
+# prime_list = []
+
+# # Add prime numbers to prime list
+# for num in range(lower, upper + 1):
+#     # all prime numbers are greater than 1
+#     if num > 1:
+#         for i in range(2, num):
+#             if (num % i) == 0:
+#                 break
+#         else:
+#             prime_list.append(num)
+
+# print(f'Prime number list: {prime_list}')
