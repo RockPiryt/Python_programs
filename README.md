@@ -1,5 +1,5 @@
 # Python_programs
-With use cases
+With tests
 
 ## Write programs for studies at the University of Gdańsk
 
@@ -23,3 +23,30 @@ Uwaga: Napisz algorytm sortujący od podstaw. Nie korzystaj z gotowych rozwiąza
 
 ### Uwaga
 Napisz wszystkie algorytmy bez wykorzystywania funkcji. Napisz use cases do prezentowanych algorytmów i przetestuj czy zwracają dobre wyniki - najlepiej automatycznie.
+
+## Zadanie 5 [10 pkt]
+Zadanie: Hetmani i Pionek
+
+### Generowanie mapy [3 pkt]
+Pierwszy etapem zadania będzie wygenerowanie planszy 8x8. W skład mapy wychodzą:
+
+- k hetmanów rozmieszczonych losowa na mapie,
+- jeden pionek rozmieszczony losowa na mapie.
+- Każdy z elementów zostaje ustawiony na różnej pozycji. Po włączeniu programu schemat planszy powinien się wyświetlać użytkownikowi.
+
+### Weryfikacja bicia [4 pkt]
+Program powinien odpowiadać na pytania: Czy pionek zostanie zbity przez któregoś z hetmanów?
+
+Dodakowo: wyświetlić pozycje wszystkich hetmanów, którzy mają możliwość zbicia pionka (o ile tacy istnieją).
+
+### Dodakowe funkcje [3 pkt]
+Po wyświeleniu komunikatu z informacją o biciu, użytkownik programu, powinien mieć możliwość:
+
+- wylosowania nowej pozycji dla pionka z pozostawieniem pierwotnego układu hetmanów;
+- usunięcia dowolnego hetmana (wskazanie jego pozycji);
+- ponowną weryfikację bicia po ustaleniu zmian.
+
+### Uwagi
+- Hetman może poruszać się pionowo, poziomo lub ukośnie.
+- Maksymalna liczba hetmanów (k) to 5.
+- Napisz testy jednostkowe tam, gdzie to możliwe.
