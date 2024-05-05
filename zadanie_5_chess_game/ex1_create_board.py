@@ -31,6 +31,7 @@ def place_queen(board):
                 row = random.randint(0, 7)
                 col = random.randint(0, 7)
                 board[row][col] = '|H|'
+        return board
 
 def place_pawn(board):
         '''Random placement of single Pawn 'P'  '''
@@ -41,11 +42,11 @@ def place_pawn(board):
         # Place Pawn if field is empty
         if board[row][col] != '|H|':
                 board[row][col] = '|P|'
+        return board
 
 chess_board = create_empty_board()
+board_with_queen = place_queen(chess_board)
+board_with_pawn = place_pawn(board_with_queen)
 
-place_queen(chess_board)
-place_pawn(chess_board)
-
-display_board(chess_board)
+# display_board(board_with_pawn)
 
